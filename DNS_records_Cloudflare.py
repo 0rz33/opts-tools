@@ -28,7 +28,7 @@ soa_record = {
 ns_records = ['rommy.ns.cloudflare.com.', 'sharon.ns.cloudflare.com.']
 
 # CNAME 目标地址，可以自定义
-cname_target = "origin_zhanqun_56cg_web.mxxorigin.com."
+cname_target = "xxxxxxxxxxx.mxxorigin.com."
 
 
 # 输出文件夹

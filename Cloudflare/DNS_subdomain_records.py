@@ -32,7 +32,7 @@ cname_target = "xxxxxxxxxxx.mxxorigin.com."
 
 
 # 输出文件夹
-outdir = 'DNS-outdir'
+outdir = 'DNS-subdomain-outdir'
 
 # 如果文件夹不存在，则创建文件夹
 if not os.path.exists(outdir):

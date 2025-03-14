@@ -6,7 +6,7 @@ config = {
     "folder_path": "CNAME-csv-export-csvFile",  # 存放 CSV 文件的目录
     "output_txt": "CNAME_csv_export.txt",  # 输出的 TXT 文件名
     "fields": {  # 选择要输出的字段，并映射成 Python 变量
-        "\ufeff域名": "domain",
+        "域名": "domain",
         "CNAME 名称": "record_name",
         "类型": "record_type",
         "CNAME 值": "cname_value"
@@ -24,7 +24,7 @@ with open(config["output_txt"], "w", encoding="utf-8") as txt_file:
         if filename.endswith(".csv"):  # 只处理 CSV 文件
             file_path = os.path.join(config["folder_path"], filename)
 
-            with open(file_path, mode="r", encoding="utf-8") as file:
+            with open(file_path, mode="r", encoding="utf-8-sig") as file:
                 reader = csv.DictReader(file)
 
                 # 遍历 CSV 数据

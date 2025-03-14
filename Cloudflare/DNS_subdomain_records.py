@@ -2,14 +2,15 @@ import os
 
 # 要生成记录的域名列表
 domains_str = """
-aaaa.cc
-bbbb.cc
-dddd.cc
-eeee.cc
+56cgeryih.com
+fghfdfb.com
+gu7ffgm.com
+gtut5u6cg.com
+3wttu8m.com
 """
 
 # string切割
-domains = domains_str.splitlines()
+domains = [domain.strip() for domain in domains_str.splitlines()]
 
 # 二级域名
 sub_name = "dt"  # 或者您可以根据需要将其赋值为其他内容，如 "sub" 等
@@ -28,7 +29,7 @@ soa_record = {
 ns_records = ['rommy.ns.cloudflare.com.', 'sharon.ns.cloudflare.com.']
 
 # CNAME 目标地址，可以自定义
-cname_target = "xxxxxxxxxxx.mxxorigin.com."
+cname_target = "origin_zhanqun_56cg_web.mxxorigin.com."
 
 
 # 输出文件夹
@@ -58,7 +59,7 @@ for domain in domains:
 
     # 生成 CNAME 记录 dt1 到 dt200
     records += f";; CNAME Records\n"
-    for i in range(1, 100):
+    for i in range(1, 101):
         records += f"{sub_name}{i}.{domain}.\t1\tIN\tCNAME\t{domain}. ; cf_tags=cf-proxied:true\n"
 
     # 将记录保存到 outdir 文件夹中

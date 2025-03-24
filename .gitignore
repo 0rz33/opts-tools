@@ -2,6 +2,7 @@
 
 /AWS/CNAME-csv-export-csvFile/*
 /AWS/CNAME_csv_export.txt
+/AWS/.DS_Store
 
 /Cloudflare/DNS-subdomain-outdir
 /Cloudflare/DNS-domain-outdir

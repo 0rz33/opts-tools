@@ -1,6 +1,11 @@
 # OPS-tools
 # 运维小工具
 
+## 创建用户和用户组 - interactive_acl_multiple_users.sh
+
+交互式
+
+组赋值权限或者个人<code>visudo</code>
 
 ## Cloudflare  工具  
 

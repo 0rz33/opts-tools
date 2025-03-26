@@ -1,7 +1,7 @@
 # OPS-tools
 # 运维小工具
 
-## 创建用户和用户组 - interactive_acl_multiple_users.sh
+## [创建用户和用户组](https://github.com/0rz33/opts-tools/blob/main/interactive_acl_multiple_users.sh)
 
 交互式
 
@@ -31,8 +31,15 @@
 
 #### (目前只针对Gname)
 
+**自动化操作**
+
+``` bash
+python3 init_cmd.py
+```
+
 **手动添加二级域名在AWS里并复制到「CNAME-csv-export-csvFile 」下：**
 - CNAME_csv_export.py  --------  此脚本回遍历「CNAME-csv-export-csvFile 」下的所有数据导出CSV数据，生成TXT文件(CNAME_csv_export.txt) 可根据格式
+
     ``` bash
     python DNS_domain_records.py  
     ```

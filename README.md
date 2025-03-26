@@ -3,6 +3,8 @@
 
 ## [创建用户和用户组](https://github.com/0rz33/opts-tools/blob/main/interactive_acl_multiple_users.sh)
 
+- interactive_acl_multiple_users.sh
+
 交互式
 
 组赋值权限或者个人<code>visudo</code>
